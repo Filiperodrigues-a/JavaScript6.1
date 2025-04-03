@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #novaTarefa {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .tarefa {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .concluida {
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    .nao-concluida {
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="novaTarefa" placeholder="Digite a descrição da tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <div id="tarefas">
+       
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
